@@ -1,0 +1,10 @@
+<div class="pt-4 text-center">
+  <h2 class="text-uppercase mb-3 fs-1 fw-bolder"><ng-content></ng-content></h2>
+  <div class="d-flex align-items-center justify-content-center mb-3">
+    <!-- <div class="line me-3"></div> -->
+    <ng-content select="[leftline]"></ng-content>
+    <i class="fa-solid fa-star"></i>
+    <ng-content select="[rightline]"></ng-content>
+    <!-- <div class="line ms-3"></div> -->
+  </div>
+</div>

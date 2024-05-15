@@ -1,0 +1,14 @@
+.line {
+  height: 4px;
+  width: 80px;
+  background-color: rgb(44, 62, 80);
+}
+button {
+  background-color: #1abc9c;
+}
+button:hover {
+  background-color: #1abc9c;
+}
+.form-control:focus {
+  box-shadow: none;
+}

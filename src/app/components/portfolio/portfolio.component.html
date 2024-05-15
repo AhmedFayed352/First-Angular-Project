@@ -1,0 +1,24 @@
+<div class="pt-4">
+  <app-star>
+    portfolio component
+    <div class="line me-3" leftline></div>
+    <div class="line ms-3" rightline></div>
+  </app-star>
+  <div class="mb-4">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4 col-md-6" *ngFor="let p of photos">
+          <div class="rounded-3 overflow-hidden position-relative for-icon" (click)="showImages($event)">
+            <img class="w-100 rounded-3" [src]="p" alt="portfolio image">
+            <div class="layer position-absolute start-0 top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+              <i class="text-white fa-solid fa-plus fa-6x"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="model position-fixed start-0 top-0 w-100 h-100 bg-primary bg-opacity-25 d-none justify-content-center align-items-center" (click)="hidePhoto($event)">
+      <img [src]="imgSrc" class="for-img" alt="viewed image">
+    </div>
+  </div>
+</div>

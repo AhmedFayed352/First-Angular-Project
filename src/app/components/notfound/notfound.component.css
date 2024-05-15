@@ -1,0 +1,7 @@
+.notfound {
+  background-color: #1abc9c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
